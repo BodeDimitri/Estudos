@@ -28,16 +28,18 @@ def jogar():
             marca_chute_correto(chute, letras_acertadas, palavra_secreta)
         else:
             erros += 1
-            desenha_forca()
+            desenha_forca(erros)
 
-        enforcou = erros == 6
+        enforcou = erros == 7
         acertou = '_' not in letras_acertadas
         print(letras_acertadas)
         
     if(acertou):
         print('Você ganhou!')
+        imprime_mensagem_vencedor()
     else: 
          print('Você perdeu')
+         imprime_mensagem_perdedor(palavra_secreta)
         
     print("Fim do jogo")
 
@@ -67,6 +69,19 @@ def imprime_mensagem_perdedor(palavra_secreta):
     print("   \_             _/       ")
     print("     \_         _/         ")
     print("       \_______/           ")
+
+def imprime_mensagem_vencedor():
+    print("Parabéns, você ganhou!")
+    print("       ___________      ")
+    print("      '._==_==_=_.'     ")
+    print("      .-\\:      /-.    ")
+    print("     | (|:.     |) |    ")
+    print("      '-|:.     |-'     ")
+    print("        \\::.    /      ")
+    print("         '::. .'        ")
+    print("           ) (          ")
+    print("         _.' '._        ")
+    print("        '-------'       ")
 
 def desenha_forca(erros):
     print("  _______     ")
