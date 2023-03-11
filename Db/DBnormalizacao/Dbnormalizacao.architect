@@ -196,18 +196,139 @@
     </index>
    </folder>
   </table>
+  <table id="TAB61" populated="true" UUID="e117ea58-89b6-4a3f-95c3-330619543d26" name="fornecedores/FN 3 Boycee-codd" objectType="TABLE" physicalName="fornecedores" >
+   <remarks></remarks>
+   <folder id="FOLTAB611" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL62" populated="true" UUID="aeedfa9f-6d9b-4ef1-bf92-5618b573cec6" autoIncrement="false" autoIncrementSequenceName="fornecedores_cod_fornecedor_seq" defaultValue="" name="cod_fornecedor" nullable="0" physicalName="cod_fornecedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="96a06fbb-08af-4b88-bdac-9e1f0f971051" autoIncrement="false" autoIncrementSequenceName="fornecedores_nome_fornecedor_seq" defaultValue="" name="nome_fornecedor" nullable="0" physicalName="nome_fornecedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB613" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB612" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB614" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX64" populated="true" UUID="4830cf67-422f-4880-8fcb-6f9bd172e303" clustered="false" name="tb_fornecedores_pk" physicalName="tb_fornecedores_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB65" populated="true" UUID="e8873cf8-1a1a-49ab-9a06-7436fcb90bfd" name="fornecedor_produto/FN 3 Boycee-codd" objectType="TABLE" physicalName="fornecedor_produto/FN 3 Boycee-codd" >
+   <remarks></remarks>
+   <folder id="FOLTAB651" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL66" populated="true" UUID="b571fed5-7a97-4ca1-a752-442b1c27fc2d" autoIncrement="false" autoIncrementSequenceName="fornecedor_produto/FN 3 Boycee-codd_cod_fornecedor_seq" defaultValue="" name="cod_fornecedor" nullable="0" physicalName="cod_fornecedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="ad132f5e-ff8b-4df2-b614-7081a50ec69d" autoIncrement="false" autoIncrementSequenceName="fornecedor_produto/FN 3 Boycee-codd_cod_produto_seq" defaultValue="" name="cod_produto" nullable="0" physicalName="cod_produto" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="c8d718ea-16f1-4c52-a786-695bdfa8c7e4" autoIncrement="false" autoIncrementSequenceName="fornecedor_produto/FN 3 Boycee-codd_qtd_estoque_seq" defaultValue="" name="qtd_estoque" nullable="0" physicalName="qtd_estoque" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB653" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB652" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB654" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX69" populated="true" UUID="2ed5a904-6503-46bc-9335-68a5d2fe9f2c" clustered="false" name="tb_fornecedor_produto_pk" physicalName="tb_fornecedores_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB70" populated="true" UUID="ded4598b-050b-44b2-8cf5-3d1250e3dcd0" name="pedidos/FN 3" objectType="TABLE" physicalName="pedidos/FN 3" >
+   <remarks></remarks>
+   <folder id="FOLTAB701" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL71" populated="true" UUID="f4d73049-b811-4dfd-8dd9-1696512eac21" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_nota_fiscal_seq" defaultValue="" name="nota_fiscal" nullable="0" physicalName="nota_fiscal" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="3c46b278-01c0-4e95-bbff-964db61f2dca" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_cod_vendedor_seq" defaultValue="" name="cod_vendedor" nullable="0" physicalName="cod_vendedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL73" populated="true" UUID="f0e115f6-1789-40f3-9494-1ff3919c5a7d" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_cpf_seq" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL74" populated="true" UUID="00ac6b68-2cf4-4c44-a32a-2c659b1e6347" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_valor_venda_seq" defaultValue="" name="valor_venda" nullable="0" physicalName="valor_venda" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL75" populated="true" UUID="f41b8587-82d4-4dd4-b694-c47878c3ed5a" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_data_pedido_seq" defaultValue="" name="data_pedido" nullable="0" physicalName="data_pedido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL76" populated="true" UUID="e9079dee-98b1-4732-b091-3feb31317f70" autoIncrement="false" autoIncrementSequenceName="pedidos/FN 3_prazo_de_entrga_seq" defaultValue="" name="prazo_de_entrga" nullable="0" physicalName="prazo_de_entrga" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB703" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB702" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB704" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX77" populated="true" UUID="cf8130b9-bf34-4199-9379-a96cbf29de66" clustered="false" name="tb_pedidos_pk" physicalName="tb_pedidos_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB78" populated="true" UUID="5732b6f9-2530-4684-ae30-3d64b9a8558c" name="vendedor/FN3" objectType="TABLE" physicalName="vendedor" >
+   <remarks></remarks>
+   <folder id="FOLTAB781" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL79" populated="true" UUID="81970404-d096-4b89-afbb-6e75995523ea" autoIncrement="false" autoIncrementSequenceName="vendedor_cod_vendedor_seq" defaultValue="" name="cod_vendedor" nullable="0" physicalName="cod_vendedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL80" populated="true" UUID="3d373d09-e24d-4ad1-bd0c-84e42492f300" autoIncrement="false" autoIncrementSequenceName="vendedor_nome_vendedor_seq" defaultValue="" name="nome_vendedor" nullable="0" physicalName="nome_vendedor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB783" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB782" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB784" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX81" populated="true" UUID="55655faf-e021-48a8-8bf6-7749796a1bc2" clustered="false" name="tb_vendedor_pk" physicalName="tb_vendedor_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB82" populated="true" UUID="6ce5f5d7-223d-4876-b7ed-69d83f5f46e3" name="clientes/FN3" objectType="TABLE" physicalName="clientes/FN3" >
+   <remarks></remarks>
+   <folder id="FOLTAB821" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL83" populated="true" UUID="2cab0337-66f7-4685-bca3-a7bfdfc3e425" autoIncrement="false" autoIncrementSequenceName="clientes/FN3_cpf_seq" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL84" populated="true" UUID="539ca544-5491-46fa-b745-b7a3bd3ad015" autoIncrement="false" autoIncrementSequenceName="clientes/FN3_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL85" populated="true" UUID="ff8fc517-c3b7-4065-9161-d646b7ce7616" autoIncrement="false" autoIncrementSequenceName="clientes/FN3_endereço_seq" defaultValue="" name="endereço" nullable="0" physicalName="endereço" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    <column id="COL86" populated="true" UUID="9f8c7224-ddcf-4d63-b7cf-48f53b23f6ce" autoIncrement="false" autoIncrementSequenceName="clientes/FN3_telefone_seq" defaultValue="" name="telefone" nullable="0" physicalName="telefone" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-9" userDefinedTypeUUID="087a20b8-b387-474a-b9c8-55eb87aff017" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB823" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB822" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB824" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX87" populated="true" UUID="1344379c-3357-4f14-abfd-4012d03973e2" clustered="false" name="td_clientes_pk" physicalName="td_clientes_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
   <relationships>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="35" y="15" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB20" x="244" y="173" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB30" x="666" y="311" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB37" x="902" y="311" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB44" x="445" y="306" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+ <play-pen zoom="1.0" viewportX="245" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="6" y="1" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB20" x="215" y="159" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB30" x="635" y="369" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB37" x="854" y="355" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="423" y="273" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB61" x="1636" y="497" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB65" x="1845" y="483" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB70" x="1063" y="440" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB78" x="1259" y="495" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB82" x="1459" y="470" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
