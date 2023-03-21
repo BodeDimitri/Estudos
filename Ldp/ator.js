@@ -9,9 +9,9 @@ function mostraAtor(){
 //Movimenta Atpr
 function movimentaAtor(){
     if(keyIsDown(UP_ARROW)){
-      yAtor -= 1;
+      yAtor -= 1.2;
     }
     if(keyIsDown(DOWN_ARROW)){
-      yAtor += 1;
+      yAtor += 0.8;
     }
   }
