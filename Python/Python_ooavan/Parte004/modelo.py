@@ -38,10 +38,8 @@ class series(Programa):
 class Playlist(Programa):
     def __init__(self, nome, programas):
         self.nome = nome
-        self.programas = programas
+        super().__init__(programas)
 
-    def tamanho(self):
-        return len(self.programas)
     
 filme  = filmes('Senhor dos aneis com o resto errado', 2018, 160, 0)
 serie = series('Outlander', 2017, 7, 0)
