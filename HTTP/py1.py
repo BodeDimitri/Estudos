@@ -1,4 +1,4 @@
-import math
+
 
 dia = str(input(''))
 dia_entrega = int(input(''))
@@ -8,7 +8,6 @@ dia_semana = ['domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabad
 
 dia_d_entrega = (dia_semana.index(dia) + dia_entrega) - 7
 
-print(dia_d_entrega)
 if dia_entrega == 0:
     print('chega hoje!')
 else:
