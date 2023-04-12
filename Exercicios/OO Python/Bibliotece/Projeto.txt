@@ -1,0 +1,105 @@
+Projeto: Biblioteca de Livros
+
+O objetivo deste projeto é criar uma classe Livro para representar um livro e uma classe Biblioteca para gerenciar uma coleção de livros.
+
+A classe Livro deve ter as seguintes propriedades:
+
+    título: string
+    autor: string
+    isbn: string
+    disponível: booleano
+
+E os seguintes métodos:
+
+    init(self, título, autor, isbn): construtor que recebe os valores de título, autor e ISBN e define a propriedade disponível como True
+    emprestar(self): método que define a propriedade disponível como False se o livro estiver disponível, caso contrário, exibe uma mensagem informando que o livro não está disponível
+    devolver(self): método que define a propriedade disponível como True se o livro estiver emprestado, caso contrário, exibe uma mensagem informando que o livro não precisa ser devolvido
+
+A classe Biblioteca deve ter as seguintes propriedades:
+
+    livros: lista de objetos Livro
+
+E os seguintes métodos:
+
+    init(self): construtor que inicializa a lista de livros vazia
+    adicionar_livro(self, livro): método que recebe um objeto Livro e adiciona à lista de livros
+    emprestar_livro(self, título): método que recebe o título de um livro, procura na lista de livros e chama o método emprestar do objeto Livro correspondente, caso o livro esteja disponível
+    devolver_livro(self, título): método que recebe o título de um livro, procura na lista de livros e chama o método devolver do objeto Livro correspondente, caso o livro esteja emprestado
+
+Aqui está um exemplo de como você pode usar essas classes em seu programa:
+
+Diego Cesar Sinhorini Albino
+As 5 spices girls voltaram?
+
+Até o momento em que escrevo esta resposta (setembro de 2021), as Spice Girls já se reuniram algumas vezes desde seu hiato em 2000. A última vez que elas se apresentaram juntas foi em 2019, na turnê "Spice World 2019", que passou por vários países, incluindo o Reino Unido. No entanto, não há informações sobre novas reuniões ou projetos futuros das Spice Girls.
+Diego Cesar Sinhorini Albino
+Porque as spices girls se separaram?
+
+As Spice Girls se separaram em 2000, após a conclusão de sua turnê mundial "Forever Tour". Há várias razões que levaram à separação do grupo, incluindo diferenças pessoais, disputas criativas e cansaço após anos de intenso trabalho e sucesso.
+
+Em particular, houve relatos de tensão entre as integrantes, especialmente entre Geri Halliwell (Ginger Spice) e as outras quatro integrantes. Em maio de 1998, Geri anunciou sua saída do grupo, citando diferenças criativas e de direção musical. A partir daí, o grupo continuou como um quarteto e lançou mais um álbum, "Forever", antes de decidir se separar.
+
+No entanto, as Spice Girls sempre mantiveram uma grande base de fãs e sua música continuou a ser popular ao longo dos anos, levando a várias reuniões e projetos conjuntos desde sua separação.
+Diego Cesar Sinhorini Albino
+Me proponha um projeto simples de python para eu fixar bem os conceito de Orientação a Objeto  
+
+Claro, vou propor um projeto simples que usa conceitos básicos de orientação a objetos em Python.
+
+Projeto: Biblioteca de Livros
+
+O objetivo deste projeto é criar uma classe Livro para representar um livro e uma classe Biblioteca para gerenciar uma coleção de livros.
+
+A classe Livro deve ter as seguintes propriedades:
+
+    título: string
+    autor: string
+    isbn: string
+    disponível: booleano
+
+E os seguintes métodos:
+
+    init(self, título, autor, isbn): construtor que recebe os valores de título, autor e ISBN e define a propriedade disponível como True
+    emprestar(self): método que define a propriedade disponível como False se o livro estiver disponível, caso contrário, exibe uma mensagem informando que o livro não está disponível
+    devolver(self): método que define a propriedade disponível como True se o livro estiver emprestado, caso contrário, exibe uma mensagem informando que o livro não precisa ser devolvido
+
+A classe Biblioteca deve ter as seguintes propriedades:
+
+    livros: lista de objetos Livro
+
+E os seguintes métodos:
+
+    init(self): construtor que inicializa a lista de livros vazia
+    adicionar_livro(self, livro): método que recebe um objeto Livro e adiciona à lista de livros
+    emprestar_livro(self, título): método que recebe o título de um livro, procura na lista de livros e chama o método emprestar do objeto Livro correspondente, caso o livro esteja disponível
+    devolver_livro(self, título): método que recebe o título de um livro, procura na lista de livros e chama o método devolver do objeto Livro correspondente, caso o livro esteja emprestado
+
+Aqui está um exemplo de como você pode usar essas classes em seu programa:
+
+makefile
+# Criar alguns objetos Livro
+livro1 = Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", "9788532530801")
+livro2 = Livro("O Hobbit", "J.R.R. Tolkien", "9788595080309")
+livro3 = Livro("O Senhor dos Anéis", "J.R.R. Tolkien", "9788535901452")
+
+# Criar um objeto Biblioteca
+biblioteca = Biblioteca()
+
+# Adicionar os livros à biblioteca
+biblioteca.adicionar_livro(livro1)
+biblioteca.adicionar_livro(livro2)
+biblioteca.adicionar_livro(livro3)
+
+# Emprestar um livro
+biblioteca.emprestar_livro("O Hobbit")
+
+# Tentar emprestar um livro indisponível
+biblioteca.emprestar_livro("Harry Potter e a Pedra Filosofal")
+
+# Devolver um livro
+biblioteca.devolver_livro("O Hobbit")
+
+# Tentar devolver um livro que não precisa ser devolvido
+biblioteca.devolver_livro("O Hobbit")
+
+Espero que este projeto seja útil para você praticar os conceitos básicos de orientação a objetos em Python. Lembre-se de que este é apenas um exemplo e você pode expandi-lo e personalizá-lo conforme necessário para seus próprios projetos.
+
