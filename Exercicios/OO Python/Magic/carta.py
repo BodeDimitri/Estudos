@@ -4,11 +4,12 @@ class Jogador:
         self.hp = hp
 
 class Carta: 
-    def __init__(self, name, mana,effect ,color):
+    def __init__(self, name, mana, effect ,color):
         self.name = name
         self.mana = mana
         self.effect = effect
         self.color = color
+        self.jogada = False
         
     def jogada(self):
         self.jogada = True
@@ -21,8 +22,7 @@ class Carta:
             print(f'A carta {self.nome} não pode ser ativada pois ela ainda não foi usada.')
 
 class Criatura:
-    def __init__(self, name, mana, color, player, strength, toughness):
-        super().__init__(name, mana, color, player, 'Criatura')
+    def __init__(self, name, mana, color, strength, toughness):
         self.strength = strength
         self.toughness = toughness
 
@@ -33,4 +33,8 @@ class Criatura:
         print(f'A {self.name} atacou o {self.player}')
 
     def bloquear(self):
-        print(f'')
+        print(f'A {self.name} entercepitou o ataque ao {self.player}')
+
+criatura = Criatura('Criatura', 2, 'Verde', 2, 3)
+print(criatura)
+
