@@ -1,0 +1,16 @@
+FROM node:14 
+    # Importar o Node na versão 14
+WORKDIR /app-node 
+    # Diretório padrão para executar os comandos do container 
+ARG PORT_BUILD=6000
+    # Funciona no tempo de criação da build da imgem. Define a porta
+ENV PORT=$PORT
+    # Será usado no container posteriormente. Definie a variavel para ser usado mais para frente
+EXPOSE $PORT
+    # Explicita qual porta vai ser usada. Marca a porta $PORT
+COPY . . 
+    # "copiamos todo o conteúdo do diretório atual Dockerfile para o diretório /app-node dentro do container. "
+RUN npm install
+    # Executa o comando 
+ENTRYPOINT npm start 
+    # Quando executar o cotainer o comando a ser executado sera
