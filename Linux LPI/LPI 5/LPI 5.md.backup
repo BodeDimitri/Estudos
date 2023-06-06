@@ -78,8 +78,6 @@ root
 
 "ls -i" Mostra os laços
  
- [/ in linux](./bar.png "")
- 
  ---
  
  ### -  *2.4 Creating, Moving and Deleting Files:*
@@ -108,6 +106,58 @@ touch opções:
 
 1. -m alterar apenas a data de modificação.
 2. -a alterar apenas a data de acesso.
-3. -c 
+3. -c para que o arquivo não seja criado caso ele não exista.
+
+cp {arquivo1} {arquivo2} - Serve para copiar arquivos, possível trocar o nome na copia, copiar e mover para outro diretório e os dois ao mesmo tempo. Possível copiar mais de um arquivo. **Cuidado pois ele pode sobrescrever arquivos.**
+
+Ex:
+
+>cp texto.txt texto1.txt
+
+>cp arquivos/texto.txt arquivos2/texto2.txt
+
+>cp arquivos/texto.txt arquivos2/
+
+>cp arquivos/* pastacentral/
+
+E possível usar -i para criar uma opção iterativa.
+
+Ex: 
+````
+cp arquivos/texto.txt arquivos/texto.txt
+
+cp: overwrite 'arquivos/texto.txt'
+````
+
+Usar -v mostra de melhor maneira todos os processos feitos.
+
+Usar -u para copiar arquivos que foram atualizados a pouco tempo, mesmo que eles já estejam copiados.
+
+-b serve para criar um backup do arquivo
+
+Ex:
+````
+cp -b arquivos/texto.txt pastacentral/
+ls pastacentral/
+texto.txt~ texto.txt
+````
+
+-R para copiar uma pasta inteira. *Copia arquivos ocultos também*
+
+-f serve para forçar a sobrescrever.
+
+>rm arquivos pastacentral
+
+rm {arquivo} - Remove o arquivo especificado.
+
+ - **Cuidado ao usar rm -rf**
+
+Ex:
+>rm  texto.txt
+
+mv {arqivo/diretório} {arquivo/diretório} - Serve para mover arquivos ou editar.
+
+>mv arquivos/texto.txt  arquivos/programa.txt
+
  
  
