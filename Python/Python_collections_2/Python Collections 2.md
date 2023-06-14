@@ -188,7 +188,7 @@ Counter() e um comando que serve para contar a quantidade de elementos iteraveis
 ```python
 from collections import Counter
 
-aparicoes = Counter(meu_texto.split()
+aparicoes = Counter(meu_texto.split())
 ```
 
 
