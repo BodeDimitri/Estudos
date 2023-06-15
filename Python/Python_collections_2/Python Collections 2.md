@@ -74,8 +74,6 @@ usuarios_data_science ^ usuarios_machine_learning
 
 > {13, 15, 42, 43}
 
-
-
 Lembrando que conjuntos são mutáveis, podem ser alterados, adicionados e removíveis.
 
 - .add() para adicionar elementos ao conjunto.
@@ -97,7 +95,7 @@ Exemplo da estrutura:
   "nome" : 2,
   "vindo" : 1
  }
- 
+
  nomes["Guilherme"]
 ```
 
