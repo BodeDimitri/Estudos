@@ -210,4 +210,18 @@ markers =
     calcular_bonus = Teste
 ```
 
+---
+
+#### Pytest-cov
+
+```python
+>pip install pytest-cov
+```
+
+para o pytest-cov fazer os testes você vai seguir os seguintes parâmetros:
+
+```python
+pytest --cov={diretorio_} {diretorio_}
+```
+
 
