@@ -1,0 +1,12 @@
+[run]
+source = bytebank
+
+[report]
+exclude_lines = 
+    def __str__
+    def nome
+    def salario
+    def _eh_diretor
+
+[html]
+directory = coverage_relatorio_html

@@ -221,7 +221,112 @@ markers =
 para o pytest-cov fazer os testes você vai seguir os seguintes parâmetros:
 
 ```python
-pytest --cov={diretorio_} {diretorio_}
+pytest --cov={nome_do_arquivo_sem_ponto_extensão} {diretorio_tests}
+```
+
+```python
+> pytest --cov=bytebank  main/tests 
+```
+
+```python
+---------- coverage: platform win32, python 3.11.4-final-0 -----------
+Name               Stmts   Miss  Cover
+--------------------------------------
+main\bytebank.py      38      3    92%
+--------------------------------------
+TOTAL                 38      3    92%
+```
+
+Existe também o cover report term-missing que e para checar se todas as funções da classes estão sendo testadas. 
+
+```python
+> pytest --cov=bytebank  main/tests --cov-report term-missing
+```
+
+Ele retorna as linhas das funções que não foram testadas:
+
+```python
+---------- coverage: platform win32, python 3.11.4-final-0 -----------
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+main\bytebank.py      38      3    92%   15, 39, 50
+------------------------------------------------
+TOTAL                 38      3    92%
+```
+
+Existe uma maneira melhor e com mais visual para mostrar o resultado do cov-report usando html com o seguinte comando:
+
+```python
+> pytest --cov=bytebank  main/tests --cov-report html
+```
+
+Ele vai criar um arquivo chamado de htmlcov com um arquivo html com informações que continha antes no terminal.
+
+Existe uma maneira do cov-report ignorar algumas funções pela criação de um arquivo chamado .covaragerc, que define as opções de como o cov-report vai ser usado. 
+
+**Detalhe: Criar ele na raiz do diretório**
+
+```python
+[run]
+
+[report]
+exclude_lines = 
+    def __str__
+    def nome
+    def salario
+    def _eh_diretor
+```
+
+Além de excluir algumas funções de serem testadas como foi mostrada acima, também e possível ja passar uma parte do código que normalmente e usado.
+
+```python
+[run]
+source = bytebank
+
+[report]
+exclude_lines = 
+    def __str__
+    def nome
+    def salario
+    def _eh_diretor
+```
+
+Além disso e possível a criação de uma nova pasta html.
+
+```python
+[run]
+source = bytebank
+
+[report]
+exclude_lines = 
+    def __str__
+    def nome
+    def salario
+    def _eh_diretor
+
+[html]
+directory = coverage_relatorio_html
+```
+
+---
+
+Mais configurações do .ini pode ser o **adopt**, que toda vez que você executar o pytest o que estive nessa variável será executado também 
+
+```python
+[pytest]
+adopts = -v --cov=bytebank main/tests --cov-report term-missing
+```
+
+Para criar arquivos xml com a saída do terminal
+
+```python
+pytest --junitxml {nome_desejado.xml}
+```
+
+Ou com cov:
+
+```python
+pytest --cov-report xml
 ```
 
 
