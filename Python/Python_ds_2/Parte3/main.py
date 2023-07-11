@@ -41,9 +41,40 @@ def media(lista: list=[0]) -> float:
   return calculo
 
 medias = [round(media(nota),1) for nota in notas]
-print(medias)
+#print(medias)
 
 nomes = [('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')]
 medias = [9.0, 7.3, 5.8, 6.7, 8.5]
 
-nomes = [nome[0] for nome in nomes if cond]
+nomes = [nomes[0] for nomes in nomes]
+
+estudantes = list(zip(nomes, medias))
+#print(estudantes)
+
+candidatos = [estudante[0] for estudante in estudantes if estudante[1] >= 6.0]
+#print(candidatos)
+
+nomes = [('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')]
+notas = [[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]]
+medias = [9.0, 7.3, 5.8, 6.7, 8.5]
+
+situacao = ["Aprovado" if media >= 6 else "Reprovado" for media in medias]
+#print(situacao)
+
+cadastro = [x for x in [nomes, notas, medias]]
+#print(cadastro)
+
+lista_completa = [[('João', 'J720'), ('Maria', 'M205'), ('José', 'J371'), ('Cláudia', 'C546'), ('Ana', 'A347')],
+                  [[8.0, 9.0, 10.0], [9.0, 7.0, 6.0], [3.4, 7.0, 7.0], [5.5, 6.6, 8.0], [6.0, 10.0, 9.5]],
+                  [9.0, 7.3, 5.8, 6.7, 8.5],
+                  ['Aprovado', 'Aprovado', 'Reprovado', 'Aprovado', 'Aprovado']]
+
+colunas = ['Notas', 'Média final', 'Situação']
+
+        # `{chave}: {valor} for {item} in {lista}`
+cadastro = {colunas[i]: lista_completa[i+1] for i in range(len(colunas))}
+
+cadastro['Estudantes'] = [lista_completa[0][i][0] for i in range(len(lista_completa[0]))]
+
+#print(cadastro)
+
