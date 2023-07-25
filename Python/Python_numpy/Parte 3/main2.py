@@ -10,3 +10,10 @@ peso_toranja = dado[5000:,1]
 
 plt.plot(diametro_laranja,peso_laranja)
 plt.plot(diametro_toranja,peso_toranja)
+
+Y = peso_laranja
+X = diametro_laranja
+n = np.size(X)
+
+a = (n*np.sum(X*Y) - np.sum(X)*np.sum(Y))/(n*np.sum(X**2)-np.sum(X)**2)
+b = np.mean(Y) - a*np.mean(X)
