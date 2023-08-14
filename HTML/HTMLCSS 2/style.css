@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -13,6 +15,51 @@ body{
 .apr{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-top: 20vh;
+}
+
+.apr_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apr_conteudo_titulo{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apr_conteudo_corpo{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.apr_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apr_links_github{
+    background-color: #12BAFA;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    height: 50px;
+    font-size: 24px;
+    padding: 22px 0px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.apr_imagem{
+    margin-right: 25vw;
 }
 
 .titulo-destaque{
