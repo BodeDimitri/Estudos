@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: #edf0f3;
+}
+
+.apr{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-destaque{
+    color: #0390FC;
+}
