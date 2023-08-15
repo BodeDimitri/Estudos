@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #0390FC;
+    --cor_hover: #3fa9fa;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,14 +26,14 @@
     font-weight: 600;
     font-size: 24px;
     text-decoration: none;
-    color: #0390FC;
+    color: var(--cor-terciaria);
 }
 
 body{
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: black;
-    color: #edf0f3;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     position: relative;
     min-height: 100%;
     min-height: 100vh;
@@ -84,14 +91,14 @@ body{
     font-size: 24px;
     padding: 20px 0px;
     text-decoration: none;
-    border: 2px solid #0390FC;
-    color: #F6F6F6;
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 .apr_links_github:hover{
-    background-color: #272727;
+    background-color: var(--cor-primaria);
 }
 
 .apr_imagem{
@@ -99,18 +106,18 @@ body{
 }
 
 .titulo-destaque{
-    color: #0390FC;
+    color: var(--cor-terciaria);
 }
 
 .titulo-destaque:hover{
-    color: #3fa9fa;
+    color: var(--cor_hover);
 }
 
 .rodape{
     position: absolute;
     right: 0;bottom:0;left:0;
     height: 50px;
-    background-color: #0390FC;
+    background-color: var(--cor-terciaria);
     text-align: center;
 }
 
