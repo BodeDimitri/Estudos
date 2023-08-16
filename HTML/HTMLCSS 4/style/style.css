@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #0390FC;
+    --cor_hover: #3fa9fa;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho{
+    padding: 2% 0 0 19%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+.apr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    gap: 82px;
+}
+
+.apr_conteudo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apr_conteudo_titulo{
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apr_conteudo_corpo{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.apr_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apr_links_subtitulo{
+    font-family:'Krona One', sans-serif;
+    font-weight: 400;
+}
+
+.apr_links_github{
+    /* background-color: #12BAFA; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.apr_links_github:hover{
+    background-color: var(--cor-primaria);
+}
+
+.apr_imagem{
+    margin-right: 25vw;
+    width: 40%;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.titulo-destaque:hover{
+    color: var(--cor_hover);
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    margin-top: auto;
+    height: 5%;
+}
+
+.rodape_texto{
+    display: flex;
+    justify-content: center;
+    font-family:  'Montserrat', sans-serif;
+}
+
+@media (max-width: 1450px) {
+
+    .apr{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .apr_imagem{
+        margin-right: 3vw;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+}
