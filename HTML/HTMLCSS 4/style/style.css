@@ -134,6 +134,7 @@ body{
     .apr{
         display: flex;
         flex-direction: column-reverse;
+        margin-left: 7vw;
     }
 
     .apr_imagem{
@@ -144,4 +145,11 @@ body{
         justify-content: center;
     }
 
+    .apr_conteudo{
+        width: auto;
+    }
+
+    .cabecalho {
+        padding: 2% 0 0 14%;
+    }
 }
