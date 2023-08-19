@@ -23,6 +23,8 @@ body{
 
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .principal_botao{
@@ -30,6 +32,13 @@ body{
     color: var(--branco_principal);
     border: var(--botao_azul) 2px solid;
     background-color: var(--botao_azul);
-    border-radius: 7%;
+    border-radius: 5%;
     padding: 1em;
+    display: block;
+}
+
+.principal_botao2{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--branco_principal);
 }
