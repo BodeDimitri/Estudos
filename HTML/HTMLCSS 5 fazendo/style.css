@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root{
     --branco_principal: #FFFFFF;
     --cinza: #C0C0C0;
     --botao_azul: #167Bf7;
-    --background: #00030C; 
+    --background: #00030C;
+    --fonte_principal: 'Inter', sans-serif;
 }
 
 body{
     background-color: var(--background);
     color: var(--branco_principal);
+    font-size: 1em;
+    font-weight: 400;
 }
 
 *{
@@ -19,12 +24,20 @@ body{
     background-image: url(assets/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    font-family: var(--fonte_principal);
+    align-items: center;
+    text-align: center;
 }
 
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.container_titulo{
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 .principal_botao{
@@ -35,6 +48,7 @@ body{
     border-radius: 5%;
     padding: 1em;
     display: block;
+    margin-bottom: 1em;
 }
 
 .principal_botao2{
@@ -42,4 +56,42 @@ body{
     background-color: transparent;
     border: 2px solid var(--branco_principal);
     padding: 1em;
+    display: block;
+    color: var(--branco_principal);
+    margin-bottom: 1em;
+}
+
+.container_imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container_aviso{
+    font-size: 0.9em;
+    color: var(--cinza);
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__img{
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 12em;
+}
+
+.descricao_titulo{
+    font-family: var(--fonte_principal);
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao_p{
+    font-family: var(--fonte_principal);
+    font-size: 1.1em;
+    font-weight: 400;
 }

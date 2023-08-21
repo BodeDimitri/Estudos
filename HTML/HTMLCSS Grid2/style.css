@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+container_grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+
+.o-header {
+    grid-area: header;
+    }
+    
+    .o-aside {
+    grid-area: aside;
+    }
+    
+    .o-main {
+    grid-area: main;
+    }
+    
+    .o-footer {
+    grid-area: footer;
+    }
