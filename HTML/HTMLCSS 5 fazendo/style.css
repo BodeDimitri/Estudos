@@ -41,6 +41,7 @@ body{
 }
 
 .principal_botao{
+    font-family: var(--fonte_principal);
     text-decoration: none;
     color: var(--branco_principal);
     border: var(--botao_azul) 2px solid;
@@ -75,12 +76,12 @@ body{
 }
 
 .secundario__img{
-    width: 80%;
+    width: 100%;
 }
 
 .secundario {
     align-items: center;
-    margin: 0 12em;
+    margin: 0 18em;
 }
 
 .descricao_titulo{
@@ -94,4 +95,21 @@ body{
     font-family: var(--fonte_principal);
     font-size: 1.1em;
     font-weight: 400;
+    padding: 0 0 1em;
+}
+
+.botao2 {
+    display: inline-block;
+}
+
+.img2 {
+    margin: 0 10em;
+}
+
+.container secundario{
+    margin: 0 0 0 15em;
+}
+
+.container__descricao {
+    padding: 2em;
 }
