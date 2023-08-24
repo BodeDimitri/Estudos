@@ -1,0 +1,14 @@
+:root{
+    --fundo_cor: #EBECEE;
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--fundo_cor);
+}
+
+h1 {
+        background-color: white;
+}
