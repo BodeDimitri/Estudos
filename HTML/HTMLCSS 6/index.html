@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resetcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,5 +39,65 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrosel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/Nodejs.svg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/Tuning.svg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/Javascript.svg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+            }
+        },      
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 10,
+        },
+        });
+    </script>
 </body>
 </html>
