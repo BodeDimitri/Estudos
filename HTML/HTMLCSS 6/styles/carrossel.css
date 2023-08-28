@@ -21,3 +21,156 @@
     position: initial;
 }
 
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0.9em;
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul_escuro);
+    font-family: var(--fonte_principal);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: var(--fonte_principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botoes__saibamais {
+    background: var(--laranja);
+    display: flex;
+    width: 161px;
+    height: 48px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.autor {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0.9em;
+    padding: 1em;
+}
+
+.autor__descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descicao__imagem__estrlinha {
+    margin-bottom: 0.5em;
+}
+
+.botoes2 {
+    display: flex;
+}
+
+.card__botoes2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3em;
+    text-align: center;
+
+}
+
+.botoes__saibamais2 {
+    background: var(--laranja);
+    display: flex;
+    width: 161px;
+    height: 48px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.descricao__titulo2 {
+    color: var(--laranja);
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.descricao__titulo-livro2 {
+    color: var(--azul_escuro);
+    font-family: var(--fonte_principal);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0.5em 0;
+}
+
+.descricao__texto2 {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: var(--fonte_principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.descricao__juliana {
+    margin: 1em 0 1.5em 0.5em;
+}

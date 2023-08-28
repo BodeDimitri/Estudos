@@ -1,0 +1,12 @@
+.hr {
+    margin: 0;
+}
+
+.rodape__titulo {
+    font-family: var(--fonte_principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1em;
+}
