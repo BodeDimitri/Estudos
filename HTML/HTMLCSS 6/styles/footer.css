@@ -10,3 +10,40 @@
     line-height: normal;
     padding: 1em;
 }
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        font-family: var(--fonte_secundaria)
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--cinza);
+        margin-left: 0.6em;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 18px;
+        color: var(--cinza);
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+}
