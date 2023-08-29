@@ -199,4 +199,35 @@
         width: 60%;
         margin: 1em auto;
     }
+
+}
+@media screen and (min-width: 1728px) {
+        
+        .carrossel__container{
+            display: flex;
+            margin: 0 5em 3em 20em;
+            align-items: center;
+        }
+    
+        .swiper {
+            width: 100%;
+            padding-right: 2.5em;
+        }
+
+        .descricao__titulo {
+            font-size: 26px;
+        }
+
+        .card {
+            width: 60%;
+        }
+
+        .botoes__saibamais {
+            width: 27%;
+        }
+
+        .botoes__saibamais2 {
+            width: 27%
+        }
+
 }
