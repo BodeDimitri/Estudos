@@ -1,12 +1,16 @@
 const precosLivros = require('./listaLivros.js');
 const livros = require('./listaLivros.js')
 
-let menor = 0;
+function menorValor(arrProdutos, posicaoInicial) {
+    let menor = posicaoInicial;
 
-for (let atual = 0; atual < livros.length; atual++) {
-    if (livros[atual].preco < livros[menor].preco) {
-        menor = atual;
+    for (let atual = 0; atual < arrProdutos.length; atual++) {
+        if (arrProdutos[atual].preco < arrProdutos[menor].preco) {
+            menor = atual;
+        }
     }
+    return menor;
 }
 
-console.log(`${precosLivros[menor].preco} e o seu nome é ${precosLivros[menor].titulo}`)
+module.exports = menorValor;
+
