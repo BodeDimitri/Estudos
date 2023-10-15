@@ -10,5 +10,9 @@ const novoAdmin = new Admin('Rodrigo', 'r@gmail.com', '2001-01-01')
 console.log(novoAdmin.nome)
 novoAdmin.nome = 'Ze Chris'
 
-console.log(novoAdmin.nome)
+console.log(novoAdmin.nomeAdmin())
 console.log(novoAdmin.sobrenome)
+console.log(novoAdmin.exibirInfos())
+
+const novoDD = new Docente('Meg', 'meg@gmaol.com', '2001-01-01')
+console.log(novoDD.exibirInfos())
