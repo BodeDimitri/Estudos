@@ -17,7 +17,7 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-016485166ec7fa705"
   instance_type = "t4g.small"
-
+  key_name = "IaC-curso"
   tags = {
     Name = "primeira-instancia-terraform"
   }
