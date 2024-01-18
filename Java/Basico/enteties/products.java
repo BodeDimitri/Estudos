@@ -1,6 +1,6 @@
 package enteties;
 
-public class products {
+public class Products {
 	public String Name;
 	public double Price;
 	public int Quantitiy;
@@ -20,7 +20,7 @@ public class products {
 	
 	
 	public String toString() {
-		return "Nome do produto:" + this.Name + " $" + this.Price + " Unidades:" + this.Quantitiy + " Total:$ " + this.TotalValueInStock(); 
+		return "Nome do produto: " + this.Name + " $" + this.Price + " Unidades:" + this.Quantitiy + " Total:$ " + this.TotalValueInStock(); 
 	}
 	
 	public String UpdatedProducts() {

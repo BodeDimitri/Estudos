@@ -3,27 +3,24 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import enteties.Products;
+import enteties.Products2;
 
-public class ProgramProducts {
+public class ProgramProducts2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Products product = new Products(); 
+		
 		System.out.println("Nome do modelo:");
-		product.Name = sc.nextLine();
+		String Name = sc.nextLine();
 		System.out.println("Preço:");
-		product.Price = sc.nextDouble();
+		Double Price = sc.nextDouble();
 		System.out.println("Quantidade em estoque:");
-		product.Quantitiy = sc.nextInt();
+		int Quantitiy = sc.nextInt();
+		Products2 product = new Products2(Name, Price, Quantitiy); 
 		
-		
-		
-		
-		//System.out.printf("Nome: " + product.Name + "Preço: " + product.Price + "Quantidade: " + product.Quantitiy);
 		
 		System.out.println(product.toString());
 		

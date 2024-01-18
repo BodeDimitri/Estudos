@@ -3,19 +3,19 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import enteties.triangle; //Classe sendo importada
+import enteties.Triangle; //Classe sendo importada
 
-public class programTriangle {
+public class ProgramTriangle {
 	
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		
 		Scanner sc = new Scanner(System.in);
 		
-		triangle x,y; //Variavel sendo definida com a classe Triangle
+		Triangle x,y; //Variavel sendo definida com a classe Triangle
 		
-		x = new triangle(); //Triangulo(Objeto) sendo instanciado
-		y = new triangle(); //Triangulo(Objeto) sendo instanciado
+		x = new Triangle(); //Triangulo(Objeto) sendo instanciado
+		y = new Triangle(); //Triangulo(Objeto) sendo instanciado
 		
 		System.out.println("Enter the measures of triangle X: ");
 		
