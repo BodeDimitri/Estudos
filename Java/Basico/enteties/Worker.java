@@ -14,7 +14,8 @@ public class Worker {
 	private Departament departament; // Worker contem um departamento
 	private List<HourContract> contracts = new ArrayList<>(); // Um Worker tem varios contratos e por isso e instanciado com uma lista 
 	
-	public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) { //Lista não são colocadas no constructor, apenas inicia ela vazia
+
+	public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
